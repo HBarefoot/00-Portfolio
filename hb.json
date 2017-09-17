@@ -1,0 +1,51 @@
+{
+  "admin": {
+    "name": "Henry Barefoot",
+    "phoneNumber": "(786) -468-1960",
+    "email": "henrybarefoot1987@gmail.com",
+    "about_me": " is a profecional Full-Stack developer,with more than 2 years of experience. Specialize building Node.js Web Apps. Passionate for new technologies, always moving forward, selfmotivated.",
+    "certification_name": [
+      "WebDev",
+      "CS50",
+      "Building responsive UI with Bootstrap",
+      "Create HTML5 Apps with jQuery Jump to start",
+      "Building Apps with Node.js Jump to Start",
+      "Mastering Node.js: Modules",
+      "Mastering Node.js: Files, Streams, and Buffers",
+      "Mastering Node.js: Packages",
+      "Mastering Node.js: Express REST Services",
+      "Mastering Node.js: Express Web Applications",
+      "Advanced CSS3 and HTML5"
+    ],
+    "cert_img_link": [
+      "/img/certifications/webdev.png",
+      "/img/certifications/cs50.png",
+      "/img/certifications/buildingResponsiveUI.png",
+      "/img/certifications/createHTMLAppswithjQuery.png",
+      "/img/certifications/buildingnodeJSapps.png",
+      "/img/certifications/nodeJSmodules.png",
+      "/img/certifications/nodeJS_Files_Streams_Buffers.png",
+      "/img/certifications/nodeJS_packages.png",
+      "/img/certifications/nodeJS_Express_REST_Service.png",
+      "/img/certifications/nodeJS_express_web_Applications.png",
+      "/img/certifications/advance_CSS3_and_HTML5.png"
+    ],
+    "skills": [
+      "NodeJS",
+      "MongoDB",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "MySQL",
+      "C",
+      "PHP",
+      "SEO",
+      "Linux",
+      "AJAX","JSON",
+      "Wordpress",
+      "Bootstrap",
+      "Foundation",
+      "jQuery"
+    ]
+  }
+}

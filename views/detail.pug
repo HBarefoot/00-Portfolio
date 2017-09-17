@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  //- header
+  header#header.preview
+    .inner
+      .content
+        h1= detail.projectName
+        h2 A fully responsive, mobile first temoplate.
+      a(href='/').button.hidden
+        span Let's Go
+  
+  //- main
+  #preview.vertical.animsition
+    .inner
+      .image.fit
+        a(href=detail.projectUrl target='_blank')
+          img(src=detail.picturePath, alt=detail.projectName)
+      .content 
+        header
+          h2= detail.projectName
+          
+          //-  technologies
+          h4 Technologies
+          each val in technologies
+            span.badge.badge-pill.badge-success= val
+          hr
+        h4 Description
+        p= detail.Description
+        hr
+    a#prev(href='/detail/previous/' + currentId).nav.previous.animsition-link
+        span.fa.fa-chevron-left
+    a#next(href='/detail/next/' + currentId).nav.next.animsition-link
+        span.fa.fa-chevron-right
+    

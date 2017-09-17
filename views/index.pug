@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  //- header
+  header#header
+    .inner.animsition
+      .content
+        h1 HBarefoot's.
+        h2.animsition { Technologies, Skills. }
+        a(href='#').button.big.alt
+          span Let's Go.
+      a(href='#').button.hidden
+        span Let's Go.
+  
+
+  //-  main
+  #main
+    .inner
+      .row
+        - var i = 0
+        - var l = 0
+        each src in path
+          .col-sm-4
+            //- Column 1 (horizontal, vertical, horizontal, vertical)
+            .image.fit
+              a(href='/detail/' + projectID[i++])
+                img(src=src, alt=projectName[l++])
+            hr

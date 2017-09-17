@@ -1,0 +1,24 @@
+h1 {
+  font-family: TamilMN;
+  margin-top: 10px;
+}
+
+.container-fluid.text-center {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0px 1px 4px 2px gray;
+}
+
+
+#form {
+  margin-top: -60px;
+}
+
+
+small#nameHelp.form-text.text-muted {
+  font-size: 10px;
+}

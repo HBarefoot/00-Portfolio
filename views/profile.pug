@@ -1,0 +1,67 @@
+include head1
+
+block content
+    .container-fluid.animsition#cover
+      a.btn.btn-outline-light(href='/')
+        span.glyphicon.glyphicon-chevron-left
+      img.img-fluid(src='/img/ProfileCoverPicture.png')
+        
+      .container.text-center#profilePic
+        img.img-fluid(src='/img/IMG_0067.jpg')
+        p= name
+        p Full-Stack developer
+        p
+          p Miami, Fl
+            span
+              img.fluid-img(src='/img/red-map-localization-icon-5.png')
+        
+      .container.text-center#coverLetter
+        h2 Me !!
+        hr
+        p= name + aboutMe
+        hr
+      
+      .container.text-center#certifications
+        h2 Courses & Certifications
+        hr
+        .row#slideShow
+          .col-md-12
+            #carousel123.carousel.carousel-showmanymoveone.slide
+              .carousel-inner
+                .item.active
+                  a(href='#')
+                    img.img-fluid.img-thumbnail(src= imgLink[1])
+                        
+                each val in imgLink
+                  .item
+                    a(href='#')
+                      img.img-fluid.img-thumbnail(src= val)          
+                      
+              a.left.carousel-control(href='#carousel123', data-slide='prev')
+                i.glyphicon.glyphicon-chevron-left
+              a.right.carousel-control(href='#carousel123', data-slide='next')
+                i.glyphicon.glyphicon-chevron-right
+                  
+          .dropdown
+            button#dropdownMenu2.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            
+            .dropdown-menu(aria-labelledby='dropdownMenu2')
+              each val in certName
+                button.dropdown-item(type='button')= val
+            
+                  
+            hr
+  
+      .container.text-center#skills
+        h2 Skills
+        hr
+        .row
+          each val in skills
+            a.badge.badge-primary(href='#')= val
+        
+        hr
+        
+            
+    include footer
+        
+    include script    

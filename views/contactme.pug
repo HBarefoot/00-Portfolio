@@ -1,0 +1,33 @@
+include head1
+  link(rel='stylesheet', href='/assets/css/contactme.css')
+    
+block content
+  
+    
+    .container-fluid.animsition#cover
+      a.btn.btn-outline-light(href='/')
+        span.glyphicon.glyphicon-chevron-left
+      img#imgContactME(src='/img/ProfileCoverPicture.png')
+  
+      .container.text-center#contactmeFormH1
+        h1 Be in Touch
+        hr
+          
+      .container#form
+         form(action='/contactme', method='post')
+          .form-group
+            label(for='name') Name
+            input.form-control#name(type='text', aria-describedby='name here', placeholder='Enter your name', name='name', required)
+          .form-group
+            label(for='email') Email
+            input.form-control#email(type='email', placeholder='Enter your name', name='email', required)
+            small#nameHelp.form-text.text-muted I'll never share your email with anyone else.
+          .form-group
+            label(for='comment') Comment
+            textarea.form-group#comment(rows='3' placeholder="Enter your Message", name='comment')
+
+          button.btn.btn-primary(type='submit') Submit
+          hr
+                
+include footer
+include script

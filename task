@@ -1,0 +1,11 @@
+# create DB to render dynamic project pictures and details
+
+  project = {
+   name: "foo",
+   technologies: ["html", "css", "javascript", "node.js", "mongoDB"],
+   picture: "/img/picName.png",
+   description: "Lorem ipsum dolor sit amet, mi. Quisque vulputate ligula velit, id accumsan dui fringilla nec. Morbi nisi mauris, placerat sit amet feugiat nec, vehicula ut ex"
+  }
+
+# arrows must change between project
+# improve the style of the page
