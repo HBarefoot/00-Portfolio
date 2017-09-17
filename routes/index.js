@@ -214,13 +214,13 @@ router.post('/contactme', (req, res, next) => {
   var transporter = mailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'sendermail87@gmail.com',
+      user: 'someemail@gmail.com',
       pass: 'mailsender87'
     },
     secure: true
   })
   var mailOptions = {
-    from: 'sendermail87@gmail.com',
+    from: 'someemail@gmail.com',
     to: emailAdmin,
     subject: 'New email',
     text: 'New emails check your dashboard.\n Name: ' + name + '\n' + 'Email: ' + email + '\n' +
@@ -242,13 +242,13 @@ router.post('/contactme', (req, res, next) => {
   var transporter = mailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'sendermail87@gmail.com',
-      pass: 'mailsender87'
+      user: 'someemail@gmail.com',
+      pass: 'password'
     },
     secure: true
   })
   var mailOptions = {
-    from: 'sendermail87@gmail.com',
+    from: 'someEmail@gmail.com',
     to: email,
     subject: 'Thank you ' + name + '!',
     text: 'I\'ll contact you soon.'
